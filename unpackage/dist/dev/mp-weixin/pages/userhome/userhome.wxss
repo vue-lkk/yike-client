@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.userhome .top-bar {
+  background: transparent;
+}
+.userhome .more {
+  display: flex;
+  height: 6px;
+}
+.userhome .more image {
+  height: 6px;
+}
+.userhome .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.userhome .bg .bg-bai {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.5;
+}
+.userhome .bg .bg-img {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.userhome .bg .bg-img image {
+  width: 110%;
+  height: 110%;
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
+  -webkit-filter: blur(16px);
+          filter: blur(16px);
+}
+.userhome .main {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(44px + 25px);
+}
+.userhome .main .user {
+  position: relative;
+  left: 0;
+  z-index: 3;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #FFFFFF;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.userhome .main .user .user-sex {
+  position: absolute;
+  z-index: 3;
+  bottom: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 20px;
+  background: #ff5d5b;
+}
+.userhome .main .user .user-sex image {
+  width: 16px;
+  height: 16px;
+}
+.userhome .main .user .user-avatar {
+  position: absolute;
+}
+.userhome .main .user .user-avatar image {
+  width: 200px;
+  height: 200px;
+}
+.userhome .main .userinfo {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+.userhome .main .userinfo .name {
+  font-size: 26px;
+  color: #272832;
+  letter-spacing: -0.89px;
+  font-weight: 400;
+}
+.userhome .main .userinfo .nickname {
+  font-size: 14px;
+  color: #272832;
+  letter-spacing: -0.48px;
+  font-weight: 400;
+}
+.userhome .main .userinfo .intoduction {
+  width: 276px;
+  height: 85px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(39, 40, 50, 0.6);
+  letter-spacing: -0.48px;
+  line-height: 24px;
+  font-weight: 200;
+}
+.userhome .bottom,
+.userhome .bottom1 {
+  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+.userhome .bottom button,
+.userhome .bottom1 button {
+  font-size: 16px;
+  color: #272832;
+  letter-spacing: -0.55px;
+  font-weight: 400;
+  background: #ffe431;
+}
+.userhome .bottom .center-btn,
+.userhome .bottom1 .center-btn {
+  background: #ffe431;
+}
+.userhome .bottom .left-btn,
+.userhome .bottom1 .left-btn {
+  background: #efebeb;
+}
+.userhome .bottom1 {
+  bottom: -90px;
+}
+.userhome .add-friend {
+  padding: 0 26px;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100vh;
+  background: #FFFFFF;
+  border-radius: 20px 20px 0 0;
+}
+.userhome .add-friend .name {
+  margin-top: 84px;
+  font-size: 26px;
+  color: #272832;
+  letter-spacing: -0.89px;
+  font-weight: 400;
+}
+.userhome .add-friend .remark {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 35%;
+  background: #f3f4f6;
+  border-radius: 12px;
+}
+.userhome .add-friend .remark textarea {
+  width: 100%;
+  height: 100%;
+  line-height: 26px;
+}
+
