@@ -348,8 +348,7 @@
 		.isColor{
 			background: #FFE431;
 		}
-		
-		
+	
 	}
 	
 }
