@@ -97,6 +97,7 @@
 			<view class="logout">退出应用</view>
 		</view>
 
+		<!-- 弹出层 -->
 		<view class="detail-popup" :animation="animationData">
 			<Popup
 			@cancal='cancal'
@@ -133,7 +134,7 @@
 				date: currentDate,
 				animationData: {},// 弹出层动画
 				
-				type:{}
+				type:{} // 类型
 
 			}
 		},

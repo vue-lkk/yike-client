@@ -1,6 +1,8 @@
 <template>
 	<!-- 头部 -->
-	<view class="top-bar" :class="isBorderBottom?'borderBottom':''">
+	<view class="top-bar" 
+	:class="isBorderBottom?'borderBottom':''" 
+	:animation='animation'>
 		<view class="top-bar-left" @click="avatar">
 			<slot name="left"></slot>
 		</view>
@@ -27,7 +29,9 @@
 				required: false, //必要性 
 				default: false //默认值 
 			},
-			
+			animation:{
+				type:Object
+			}
 		},
 		data() {
 			return {

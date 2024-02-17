@@ -202,6 +202,9 @@
 			createGroup:function() {
 				if(this.color) {
 					console.log(123)
+					uni.navigateTo({
+						url:'/pages/group/group'
+					})
 				}
 			},
 			change:function(e) {

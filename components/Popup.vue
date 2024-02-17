@@ -50,7 +50,7 @@
 					content:this.message
 				}
 				this.$emit('confirm',data )
-				
+				this.message=''
 			}
 		}
 	}
